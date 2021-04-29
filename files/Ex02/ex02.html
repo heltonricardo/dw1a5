@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Usando map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        background-color: black;
+      }
+
+      img {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .menu-button {
+        position: fixed;
+        top: 100%;
+        left: 100%;
+        transform: translate(-100%, -100%);
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./img/playstation.jpg" alt="Playstation" usemap="#ps" />
+    <map name="ps">
+      <area
+        shape="poly"
+        coords="374,244, 261,443, 490,443"
+        href="./figure/triangle.html"
+        alt="Triangle"
+      />
+      <area
+        shape="circle"
+        coords="594,350, 105"
+        href="./figure/circle.html"
+        alt="Circle"
+      />
+      <area
+        shape="poly"
+        coords="740,255, 815,330, 890,255, 910,275, 835,350, 910,425, 890,445, 815,370, 740,445, 720,425, 795,350, 720,275"
+        href="./figure/cross.html"
+        alt="Cross"
+      />
+      <area
+        shape="rect"
+        coords="945,252, 1138,443"
+        href="./figure/square.html"
+        alt="Square"
+      />
+    </map>
+    <a href="../../index.html">
+      <button class="menu-button">Menu</button>
+    </a>
+  </body>
+</html>
