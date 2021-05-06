@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      .menu-button {
+        position: fixed;
+        top: 100%;
+        left: 100%;
+        transform: translate(-100%, -100%);
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Reserva Hotel IFSP</h1>
+
+    <form action="#">
+      <label>
+        Nome Completo:
+        <input
+          name="full_name"
+          type="text"
+          placeholder="José da Silva"
+          required
+        />
+      </label>
+      <br />
+
+      <label> Email: <input name="email_addr" type="email" required /> </label>
+      <br />
+
+      <label>
+        Repita o email: <input name="email_addr_repeat" type="email" required />
+      </label>
+      <br />
+
+      <label>
+        Estado de origem
+        <select name="state">
+          <option value="BLANK"></option>
+          <option value="AC">AC - ACRE</option>
+          <option value="AL">AL - ALAGOAS</option>
+          <option value="AP">AP - AMAPÁ</option>
+          <option value="AM">AM - AMAZONAS</option>
+          <option value="BA">BA - BAHIA</option>
+          <option value="CE">CE - CEARÁ</option>
+          <option value="DF">DF - DISTRITO FEDERAL</option>
+          <option value="ES">ES - ESPÍRITO SANTO</option>
+          <option value="GO">GO - GOIÁS</option>
+          <option value="MA">MA - MARANHÃO</option>
+          <option value="MT">MT - MATO GROSSO</option>
+          <option value="MS">MS - MATO GROSSO DO SUL</option>
+          <option value="MG">MG - MINAS GERAIS</option>
+          <option value="PA">PA - PARÁ</option>
+          <option value="PB">PB - PARAÍBA</option>
+          <option value="PR">PR - PARANÁ</option>
+          <option value="PE">PE - PERNAMBUCO</option>
+          <option value="PI">PI - PIAUÍ</option>
+          <option value="RJ">RJ - RIO DE JANEIRO</option>
+          <option value="RN">RN - RIO GRANDE DO NORTE</option>
+          <option value="RS">RS - RIO GRANDE DO SUL</option>
+          <option value="RO">RO - RONDÔNIA</option>
+          <option value="RR">RR - RORAIMA</option>
+          <option value="SC">SC - SANTA CATARINA</option>
+          <option value="SP">SP - SÃO PAULO</option>
+          <option value="SE">SE - SERGIPE</option>
+          <option value="TO">TO - TOCANTINS</option>
+        </select>
+      </label>
+      <br />
+
+      <label>
+        Data de chegada: <input name="arrival_dt" type="date" required />
+      </label>
+      <br />
+
+      <label>
+        Número de noites (quartos são R$ 99,00 por noite):
+        <input
+          name="nights"
+          type="number"
+          min="1"
+          max="30"
+          value="1"
+          style="width: 10.5rem"
+          required
+        />
+        (min 1, max 30)
+      </label>
+      <br />
+
+      <label>
+        Número de noites (adicional de por convidado R$ 10,00 por noite):
+        <input
+          name="guests"
+          type="number"
+          min="1"
+          max="4"
+          style="width: 10.5rem"
+          value="1"
+          required
+        />
+        (min 1, max 4)
+      </label>
+      <br />
+
+      <label> Total estimado: R$ - </label>
+      <br />
+      <br />
+
+      <p>
+        <label>
+          Código promocional:
+          <input
+            name="promotional_code"
+            type="text"
+            pattern="[a-zA-Z0-9]{6}"
+            maxlength="6"
+            oninvalid="this.setCustomValidity('Códigos promocionais consistem de 6 digitos alfanuméricos.')"
+            oninput="this.setCustomValidity('')"
+          />
+        </label>
+        <br />
+        <input name="submit" type="submit" value="Fazer reserva" />
+      </p>
+    </form>
+
+    <a href="../../index.html">
+      <button class="menu-button">Menu</button>
+    </a>
+  </body>
+</html>
