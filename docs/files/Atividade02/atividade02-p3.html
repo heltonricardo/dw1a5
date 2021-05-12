@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style></style>
+    <title>Página 3</title>
+  </head>
+  <body>
+    <form action="#">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <p>
+          <label>
+            Nome Completo:
+            <input
+              name="nome"
+              type="text"
+              placeholder="João da Silva"
+              required
+            />
+          </label>
+        </p>
+
+        <p>
+          <label>
+            Data de nascimento: <input name="nascimento" type="date" required />
+          </label>
+        </p>
+
+        <fieldset>
+          <legend>Sexo</legend>
+          <p>
+            <label>
+              <input type="radio" name="sexo" value="f" required /> Feminino
+            </label>
+          </p>
+
+          <p>
+            <label>
+              <input type="radio" name="sexo" value="m" /> Masculino
+            </label>
+          </p>
+
+          <p>
+            <label>
+              <input type="radio" name="sexo" value="o" />
+              Outro/Não informar
+            </label>
+          </p>
+        </fieldset>
+
+        <p>
+          <label>
+            E-mail:
+            <input
+              name="email"
+              type="email"
+              placeholder="joaodasilva@email.com"
+              required
+            />
+          </label>
+        </p>
+
+        <p>
+          <label>
+            Confirme o e-mail:
+            <input
+              name="confirme_email"
+              type="email"
+              placeholder="joaodasilva@email.com"
+              required
+            />
+          </label>
+        </p>
+
+        <p>
+          <label>
+            Telefone:
+            <input
+              name="telefone"
+              type="tel"
+              placeholder="12 3456 7890"
+              required
+            />
+          </label>
+        </p>
+      </fieldset>
+      <br /><br />
+
+      <fieldset>
+        <legend>Endereço</legend>
+        <p>
+          <label>
+            Logradouro:
+            <input name="logradouro" type="text" placeholder="Rua A" required />
+          </label>
+        </p>
+
+        <p>
+          <label>
+            Número:
+            <input
+              name="numero"
+              type="number"
+              placeholder="100"
+              min="1"
+              required
+            />
+          </label>
+        </p>
+
+        <p>
+          <label>
+            Bairro:
+            <input
+              name="bairro"
+              type="text"
+              placeholder="Jardim Ataláia"
+              required
+            />
+          </label>
+        </p>
+
+        <p>
+          <label>
+            Estado:
+            <select name="estado" required>
+              <option selected disabled value="">Selecione uma opção</option>
+              <option value="ac">AC - Acre</option>
+              <option value="al">AL - Alagoas</option>
+              <option value="ap">AP - Amapá</option>
+              <option value="am">AM - Amazonas</option>
+              <option value="ba">BA - Bahia</option>
+              <option value="ce">CE - Ceará</option>
+              <option value="df">DF - Distrito Federal</option>
+              <option value="es">ES - Espírito Santo</option>
+              <option value="go">GO - Goiás</option>
+              <option value="ma">MA - Maranhão</option>
+              <option value="mt">MT - Mato Grosso</option>
+              <option value="ms">MS - Mato Grosso do Sul</option>
+              <option value="mg">MG - Minas Gerais</option>
+              <option value="pa">PA - Pará</option>
+              <option value="pb">PB - Paraíba</option>
+              <option value="pr">PR - Paraná</option>
+              <option value="pe">PE - Pernambuco</option>
+              <option value="pi">PI - Piauí</option>
+              <option value="rj">RJ - Rio de Janeiro</option>
+              <option value="rn">RN - Rio Grande do Norte</option>
+              <option value="rs">RS - Rio Grande do Sul</option>
+              <option value="ro">RO - Rondônia</option>
+              <option value="rr">RR - Roraima</option>
+              <option value="sc">SC - Santa Catarina</option>
+              <option value="sp">SP - São Paulo</option>
+              <option value="se">SE - Sergipe</option>
+              <option value="to">TO - Tocantins</option>
+            </select>
+          </label>
+        </p>
+
+        <p>
+          <label>
+            Cidade:
+            <input name="cidade" type="text" placeholder="Campinas" required />
+          </label>
+        </p>
+      </fieldset>
+      <br /><br />
+
+      <fieldset>
+        <legend>Área(s) de interesse</legend>
+        <p>
+          <label>
+            <input type="checkbox" name="computacao" value="computacao" />
+            Computação
+          </label>
+        </p>
+
+        <p>
+          <label>
+            <input type="checkbox" name="engenharia" value="engenharia" />
+            Engenharia
+          </label>
+        </p>
+
+        <p>
+          <label>
+            <input type="checkbox" name="historia" value="historia" /> História
+          </label>
+        </p>
+      </fieldset>
+      <br /><br />
+
+      <fieldset>
+        <legend>Autenticação</legend>
+        <p>
+          <label>
+            Usuário:
+            <input
+              name="usuario"
+              type="text"
+              placeholder="meu_usuario"
+              pattern="[a-z]*"
+              required
+            />
+          </label>
+        </p>
+
+        <p>
+          <label>
+            Senha: <input type="password" name="senha" minlength="8" required
+          /></label>
+        </p>
+
+        <p>
+          <label>
+            Confirme a senha:
+            <input type="password" name="confirme_senha" minlength="8" required
+          /></label>
+        </p>
+      </fieldset>
+      <br /><br />
+
+      <input name="submeter" type="submit" value="Efetuar Cadastro" />
+    </form>
+    <br />
+
+    <p>
+      <a href="./atividade02.html" alt="Página Principal"
+        >Link para Página Principal</a
+      >
+    </p>
+  </body>
+</html>
