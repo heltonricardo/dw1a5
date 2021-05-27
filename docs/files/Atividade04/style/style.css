@@ -9,7 +9,22 @@
 }
 
 .container {
+  text-align: center;
   padding: 2px 16px;
+}
+
+.mini-cv {
+  width: 240px;
+  padding: 10px;
+  border: 5px solid white;
+  margin: 10px;
+  margin-right: 60px;
+}
+
+.analise {
+  margin: 50px;
+  background-color: #ff6347;
+  border: 1px solid #4caf50;
 }
 
 .menu-button {
