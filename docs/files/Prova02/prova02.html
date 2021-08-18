@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <title>Calculadora</title>
+  </head>
+
+  <body>
+    <h1>
+      Faça a implementação da calculadora abaixo com os seguintes requisitos:
+    </h1>
+    <ul>
+      <li>
+        Usuário irá escolher o primeiro valor que será colocado no input text
+        <b>val1</b>.
+      </li>
+      <li>
+        Ao clicar em algum dos operadores, deverá ser modificado o label
+        <b>operador</b> para o símbolo correspondente. E o foco deve ir para o
+        input text <b>val2</b>, onde o usuário irá entrar com o segundo valor.
+      </li>
+      <li>
+        Clicando em <b>=</b> o resultado deve ser apresentado no input text
+        id=resultado.
+      </li>
+      <li>
+        O botão <b>C</b> deverá limpar os valores dos input text e do label
+        operador.
+      </li>
+      <li>
+        É opcional a utilização do teclado para ativar as funções dos botões.
+      </li>
+      <li>Formatar a tabela e botões para melhor apresentação.</li>
+    </ul>
+
+    <div>Calculadora do aluno: <b>Helton Ricardo</b></div>
+    <table border="1">
+      <tr>
+        <td colspan="4" id="visor">
+          Resultado: <input type="text" id="resultado" />
+        </td>
+      </tr>
+      <tr>
+        <td><input type="button" value="c" onclick="clr()" /></td>
+        <td><input type="text" id="val1" size="5" /></td>
+        <td><label id="operador"> </label></td>
+        <td><input type="text" id="val2" size="5" /></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="+" /></td>
+        <td><input type="button" value="1" /></td>
+        <td><input type="button" value="2" /></td>
+        <td><input type="button" value="3" /></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="-" /></td>
+        <td><input type="button" value="4" /></td>
+        <td><input type="button" value="5" /></td>
+        <td><input type="button" value="6" /></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="*" /></td>
+        <td><input type="button" value="7" /></td>
+        <td><input type="button" value="8" /></td>
+        <td><input type="button" value="9" /></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="/" /></td>
+        <td><input type="button" value="." /></td>
+        <td><input type="button" value="0" /></td>
+
+        <td><input type="button" value="=" onclick="resolver()" /></td>
+      </tr>
+    </table>
+    <a href="../../index.html">
+      <button class="menu-button">Menu</button>
+    </a>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

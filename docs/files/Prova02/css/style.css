@@ -1,0 +1,44 @@
+table {
+  margin: 1rem;
+}
+
+tr {
+  height: 2.5rem;
+}
+
+td {
+  width: 5rem;
+}
+
+tr,
+td,
+label {
+  display: flex;
+}
+
+input,
+label {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+label {
+  justify-content: center;
+  align-items: center;
+}
+
+#visor {
+  width: 100%;
+}
+
+#resultado {
+  height: 80%;
+}
+
+.menu-button {
+  position: fixed;
+  top: 100%;
+  left: 100%;
+  transform: translate(-100%, -100%);
+}
